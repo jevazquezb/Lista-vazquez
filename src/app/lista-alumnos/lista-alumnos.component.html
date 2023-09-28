@@ -1,0 +1,39 @@
+<h1>Students</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Active</th>
+      <th scope="col">Grades</th>
+      <th scope="col">Age</th>
+      <th scope="col">Color</th>
+      <th scope="col">Tuition & fees</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let alumno of alumnos">
+      <th scope="row">{{ alumno.id }}</th>
+      <td [ngStyle]="{'font-weight': alumno.grades > 90 ? 'bold' : 'normal'}">{{ alumno.name }}</td>
+      <td>{{ alumno.active }}</td>
+      <td [ngClass]="alumno.grades < 45 ? 'minimum' : ''">
+        {{ alumno.grades }}
+      </td>
+      <td>{{ alumno.yearsOld }}</td>
+      <td>{{ alumno.color }}</td>
+      <td>{{ alumno.fees | currency:'GBP' }}</td>
+      <td *ngIf="alumno.grades > 50; else elseBlock">
+        Approved
+        <img [src]="aprobado" width="16">
+      </td>
+      <ng-template #elseBlock>
+        <td>
+          Failed
+          <img [src]="reprobado" width="16">
+        </td>
+      </ng-template>
+    </tr>
+  </tbody>
+</table>

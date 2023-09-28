@@ -1,0 +1,58 @@
+{
+  "students": [
+    {
+      "id": 101,
+      "name": "Carlos",
+      "active": true,
+      "grades": 83,
+      "yearsOld": 15,
+      "color": "blue",
+      "fees": 1230
+    },
+    {
+      "id": 202,
+      "name": "Mark",
+      "active": true,
+      "grades": 97,
+      "yearsOld": 18,
+      "color": "green",
+      "fees": 750
+    },
+    {
+      "id": 303,
+      "name": "Stephany",
+      "active": true,
+      "grades": 42,
+      "yearsOld": 17,
+      "color": "pink",
+      "fees": 840
+    },
+    {
+      "id": 404,
+      "name": "Angela",
+      "active": true,
+      "grades": 66,
+      "yearsOld": 16,
+      "color": "gray",
+      "fees": 1765
+    },    
+    {
+      "id": 505,
+      "name": "Jackson",
+      "active": false,
+      "grades": 75,
+      "yearsOld": 15,
+      "color": "blue",
+      "fees": 320
+    },
+    {
+      "id": 606,
+      "name": "Melissa",
+      "active": false,
+      "grades": 48,
+      "yearsOld": 19,
+      "color": "yellow",
+      "fees": 967
+    }
+  ]
+}
